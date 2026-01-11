@@ -1,0 +1,102 @@
+{
+  "test_file": "data_22",
+  "model_used": "data_0.csv",
+  "total_samples": 5646,
+  "ground_truth_anomalies": 311.0,
+  "ground_truth_percentage": 5.508324477506199,
+  "results": {
+    "Isolation Forest": {
+      "anomalies_detected": 318,
+      "anomaly_percentage": 5.63230605738576,
+      "threshold_used": "Fixed (trained)",
+      "threshold_value": 0.051457750252014635,
+      "score_statistics": {
+        "min": -0.08366348394049855,
+        "max": 0.08973131081183294,
+        "mean": 0.0010236979690707033,
+        "std": 0.03328348127062628,
+        "q95": 0.053093642260527846
+      },
+      "performance": {
+        "accuracy": 0.9204746723343961,
+        "precision": 0.2830188679245283,
+        "recall": 0.28938906752411575,
+        "f1": 0.28616852146263916,
+        "tp": 90,
+        "tn": 5107,
+        "fp": 228,
+        "fn": 221
+      }
+    },
+    "One-Class SVM": {
+      "anomalies_detected": 363,
+      "anomaly_percentage": 6.429330499468651,
+      "threshold_used": "Adaptive (mean + 2\u03c3)",
+      "threshold_value": 22.575766535214772,
+      "score_statistics": {
+        "min": -13.366033151478767,
+        "max": 43.27895968989282,
+        "mean": -0.09309005257006037,
+        "std": 11.334428293892415,
+        "q95": 25.49412086284018
+      },
+      "performance": {
+        "accuracy": 0.9287991498405951,
+        "precision": 0.3746556473829201,
+        "recall": 0.43729903536977494,
+        "f1": 0.4035608308605341,
+        "tp": 136,
+        "tn": 5108,
+        "fp": 227,
+        "fn": 175
+      }
+    },
+    "Local Outlier Factor": {
+      "anomalies_detected": 1227,
+      "anomaly_percentage": 21.73219978746015,
+      "threshold_used": "Median-based",
+      "threshold_value": 4.779242410330235,
+      "score_statistics": {
+        "min": -0.58499020629551,
+        "max": 19.778688727942363,
+        "mean": 2.7028051235833024,
+        "std": 3.7105276660019473,
+        "q95": 11.04443241702505
+      },
+      "performance": {
+        "accuracy": 0.7871059156925256,
+        "precision": 0.13691931540342298,
+        "recall": 0.5401929260450161,
+        "f1": 0.21846553966189855,
+        "tp": 168,
+        "tn": 4276,
+        "fp": 1059,
+        "fn": 143
+      }
+    },
+    "Elliptic Envelope": {
+      "anomalies_detected": 430,
+      "anomaly_percentage": 7.616011335458732,
+      "threshold_used": "Adaptive (mean + 2\u03c3)",
+      "threshold_value": 13.997144857007775,
+      "score_statistics": {
+        "min": -16.457601989867914,
+        "max": 44.87798161297073,
+        "mean": -6.476971304957885,
+        "std": 10.23705808098283,
+        "q95": 22.028524187348253
+      },
+      "performance": {
+        "accuracy": 0.9332270634077223,
+        "precision": 0.4232558139534884,
+        "recall": 0.5852090032154341,
+        "f1": 0.49122807017543857,
+        "tp": 182,
+        "tn": 5087,
+        "fp": 248,
+        "fn": 129
+      }
+    }
+  },
+  "timestamp": "2026-01-11T23:44:15.393054"
+}
